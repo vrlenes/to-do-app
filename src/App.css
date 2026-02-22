@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+
+  background: linear-gradient(135deg, #667eea, #764ba2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+input {
+  padding: 10px;
+  width: 70%;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+}
+
+input:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #667eea;
+  color: white;
+  transition: 0.2s;
+  font-size: 14px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  background: #f3f4f6;
+  transition: 0.2s;
+}
+
+.todo-item:hover {
+  background: #e5e7eb;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.filters {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.active-filter {
+  background-color: #16a34a !important;
+}
+
+.remaining {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
